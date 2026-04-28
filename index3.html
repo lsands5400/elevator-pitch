@@ -67,11 +67,14 @@
 
                     <div class="col-md-12">
                             <h2 class="mt-0 mb-1">Introduction and Background</h2>
-                        <p> The goal of this project was to create a smaller scaled elevator that could transport Barbie Dolls about five feet up and down. 
+                        <p> The goal of this project was to create a small-scale elevator that could transport Barbie Dolls about three feet up and down. 
                           A common elevator seen all over the world is often controlled either by a hydraulic system or a pulley system.  For our project, 
                           considering the scale of what is being lifted up, we chose to create a pulley controlled elevator. This is done by implementing a 
                           motor that can be controlled and using a counterweight to stabilize the pulley system holding up the elevator cabin. 
                         </p>
+                        <div class="mb-3">
+                            <img src="img/parsons-elevator.jpeg" class="img-fluid" alt="elevator clean blog">
+                        </div>
                     </div>
 
                     <div class="col-md-12">
@@ -92,11 +95,23 @@
 
                     <div class="col-md-12">
                         <h2 class="mt-0 mb-1">Design Features of Main Subsystems</h2>
-                        <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
+                        <p> Design is a huge part of creating safe elevators. 
                         </p>
                         <h3>Motor-Gear-Pulley Subsystem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
+                         <p>We had to calculate the necessary torques for
+                          lifting the system in order to choose a proper motor, pulley, and gear ratio.</p> 
+                        <h4>Torque Calculations</h4>   
+                        <p>In order to lift the elevator and its contents, the motor would have to be able to exert enough torque.
+                          We chose the
+                          <a href="https://www.amazon.com/BRINGSMART-10kg-cm-Self-locking-Reversed-Rotating/dp/B07F8RYKB8/ref=sr_1_1_sspa?crid=1H90OFWGFWQ25&dib=eyJ2IjoiMSJ9.HUE6sxqWCpi6YnkSa8bS5zssvY9BuXPIhJDttaJXc3mFuAZx5kmeHGWVEdszpvEHyN5qPcNfu2pWQ4uShButS4OSAaBgkUeL07Si0bkiov9uwK_zvGr8L5FcQmIj9m9wdL3JC5rUF8AhAefHSBOnfnzVfihr-tbTwUFqD9wWEWPUwDlt6P61XZuKBo4QiFRLVAjTncjwUfowlrI1pHgbTvY5xOq5nkt_n37orbGSjSs.NP0YLnguW17pmpvHtAMk2tD4VehGEH_uFPPX5Dcf15M&dib_tag=se&keywords=bringsmart%2B12v%2B160rpm%2Bdc%2Bworm%2Bgear%2Bmotor&qid=1775606766&sprefix=bringsmart%2Bdc%2Bmotor%2B12v%2B160%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+                            BRINGSMART 12V 160rpm DC Worm Gear Motor
+                          </a>
+                          , as it has a rated torque of 0.723 ft-lb. 
+                          </p>
+                          <p>Since the elevator box and its supports weigh about 8lb, we chose a pulley of 3 in. in diameter to make the torque to 
+                          lift the elevator by itself 1 ft-lb. This torque is greater than the rated torque of the motor, so we added a 2.5 lb counterweight to remove some of the torque responsibility
+                          of the motor.
+                        </p>                
                         <h4>Gear Calculations</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
                         <h4>Beam Deflection of 10mm Shaft</h4>
