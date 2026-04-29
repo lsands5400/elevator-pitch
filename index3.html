@@ -71,8 +71,8 @@
                         <p>The goal of this project was to create a small-scale elevator that could transport Barbie Dolls about three feet up and down.
                           Typical Barbie Dreamhouses sold on the market are at least three floors which puts them in the category of buildings required by ADA guidelines 
                           to have an elevator.</p>
-                          <p>Some Barbie dreamhouses do have elevators, but they are not autonomous. They require girls playing to manually move the elevator up and down
-                            which can be less fun for girls with hand- or arm-related physical disabilities. They also look unlike real elevators and can sometimes 
+                          <p>Some Barbie dreamhouses do have elevators, but they are not autonomous. They require children playing to manually move the elevator up and down
+                            which can be less fun for children with hand- or arm-related physical disabilities. They also look unlike real elevators and can sometimes 
                             <a href="https://www.reddit.com/r/Barbie/comments/1f4bn9j/do_you_ever_think_about_the_logistics_of_this/">cause confusion.</a>
                           </p>
                           <div class="mb-3">
@@ -109,60 +109,55 @@
                             <li>Be able to brake in an emergency</li>
                           </ul>
                         </p>
-                        <p> Types of specifications: 
-                          Motor specifications, gear specifications, pulley specifications based on the motor, determining tension of wire, counterweight specifications</p>
+                        <p> These specifications impact the design of the motor, gear, pulley, tension of the wire, and the counterweight.
                         <p>The typical Barbie doll is 11-12" tall, so we decided to make the elevator 13" tall to accommodate for the tallest barbies and give them a little bit of 
                           head room. We wanted a minimum of 3 floors since, as mentioned above, most Barbie dreamhouses have three floors. Additionally, the three floors are what mandated the 
                           installation of an elevator as per ADA guidelines.
                         </p>
                         <p>We wanted the Barbies to be able to fit in the elevator with their friends, so we want a maximum carrying capcity of 3 lb. Most Barbie dolls are less than 0.5 lb, 
                           so 6 dolls should be able to comfortably ride in the elevator together.</p>
-                          <p>We also mentioned above that we want the elevator to not only be accessible for dolls, but for the girls playing with them as well. Having an elevator that can move with
-                            the push of a button will remove te challenge for girls with physical disabilities that prevent them from being able to lift the elevator themselves. The other requirement is 
+                          <p>We also mentioned above that we want the elevator to not only be accessible for dolls, but for the children playing with them as well. Having an elevator that can move with
+                            the push of a button will remove te challenge for children with physical disabilities that prevent them from being able to lift the elevator themselves. The other requirement is 
                             that the elevator resembles real life elevators more, as current Barbie Dreamhouse elevators do not look very realistic. 
                           </p>
                           <p>One final stretch goal is that the system be able to brake in case of an emergency. Most elevators have emergency braking systems in case something fails and puts passengers
                              in danger. We care about the safety of our passengers, so we want to put mechanisms in place that will ensure a safe ride.</p>
-                          <div class="mb-3">
-                            <img src="img/girl3.jpg" class="img-fluid" alt="elevator blog">
-                        </div>
                     </div>
 
                     <div class="col-md-12">
                         <h2 class="mt-0 mb-1">Design Features of Main Subsystems</h2>
-                        <p> Design is a huge part of creating safe elevators. 
+                        <p> Design is a huge part of creating safe elevators. A multitude of factors are considered, including torque capacity, factor of safety, and more.We designed multiple 
+                          subsystems with care to ensure the safety and comfort of the passengers. 
                         </p>
                         <h3>Motor-Gear-Pulley Subsystem</h3>
-                         <p>We had to calculate the necessary torques for
-                          lifting the system in order to choose a proper motor, pulley, and gear ratio.</p> 
-                        <h4>Torque Calculations</h4>   
+                          
                         <p>In order to lift the elevator and its contents, the motor would have to be able to exert enough torque.
                           We chose the
                           <a href="https://www.amazon.com/BRINGSMART-10kg-cm-Self-locking-Reversed-Rotating/dp/B07F8RYKB8/ref=sr_1_1_sspa?crid=1H90OFWGFWQ25&dib=eyJ2IjoiMSJ9.HUE6sxqWCpi6YnkSa8bS5zssvY9BuXPIhJDttaJXc3mFuAZx5kmeHGWVEdszpvEHyN5qPcNfu2pWQ4uShButS4OSAaBgkUeL07Si0bkiov9uwK_zvGr8L5FcQmIj9m9wdL3JC5rUF8AhAefHSBOnfnzVfihr-tbTwUFqD9wWEWPUwDlt6P61XZuKBo4QiFRLVAjTncjwUfowlrI1pHgbTvY5xOq5nkt_n37orbGSjSs.NP0YLnguW17pmpvHtAMk2tD4VehGEH_uFPPX5Dcf15M&dib_tag=se&keywords=bringsmart%2B12v%2B160rpm%2Bdc%2Bworm%2Bgear%2Bmotor&qid=1775606766&sprefix=bringsmart%2Bdc%2Bmotor%2B12v%2B160%2Caps%2C215&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
                             BRINGSMART 12V 160rpm DC Worm Gear Motor
                           </a>
                           , as it has a rated torque of 0.723 ft-lb. 
-                          </p>
-                          <p>We collected data to further characterize the motor. Using a multimeter, we found the resistance, 
-                            and using a multimeter, we measured the no-load speed at varying voltages. From this information, we were able to create the torque-speed curve below:
-                          </p>
-                          <div class="mb-3">
-                            <img src="img/Torque-Speed Curve at 9.35 V.png" class="img-fluid" alt="elevator  blog">
-                          </div>
-                          <p>Since the elevator box and its supports weigh about 8lb, we chose a pulley of 3 in. in diameter to make the torque to 
-                          lift the elevator by itself 1 ft-lb. This torque is greater than the rated torque of the motor, so we added a 2.5 lb counterweight to remove some of the torque responsibility
+                        </p>
+                          <p>Since the elevator box and its supports weigh about 10 lb, we chose a pulley with a 3" diameter. We also added a 10 lb counterweight to remove some of the torque responsibility
                           of the motor.
                         </p>                
-                        <h4>Gear Calculations</h4>
-                        <p>Despite the pulley diameter and counterweight working together to meet the specifications, we added a gear ratio to increase the torque and 
+                        
+                        <p>Despite the pulley diameter and counterweight working together to mostly meet the specifications, we added a gear ratio to increase the torque and 
                           subsequently, the factor of safety. We care about the lives of our dolls and don't want them to get injured, so we wanted to make the factor of safety relatively high. 
                           </p>
                           <p>We added a gear ratio of 5:1 to apply a 5x increase in magnitude of the torque of the motor. For budget purposes, we ended up purchasing a 
                             <a href="https://www.mcmaster.com/2664N536/">15-tooth gear</a> and a <a href="https://www.mcmaster.com/2664N373/">76-tooth gear</a>
                             from McMaster-Carr.
                         </p>
-                        <h4>Beam Deflection of 10mm Shaft</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
+
+                        <h3>Elevator-Rail Subsystem</h3>
+                          
+                        <p>We also took steps to smooth the movement of the elevator using linear bearings.
+                        </p>
+                        <p>We purchased 
+                          <a href="https://www.amazon.com.mx/VEVOR-SBR20-1500-deslizante-rodamientos-automatizados/dp/B0BLSC4BJH?th=1">linear bearings </a>
+                          to help constrain and facilitate the vertical displacement of the elevator. In order to attach the elevator to the the rails, we designed and laser cut a mounting plate.
+                        </p>                
                         <div class="mb-3">
                             <img src="img/girl3.jpg" class="img-fluid" alt="elevator  blog">
                         </div>
@@ -170,20 +165,33 @@
 
                     <div class="col-md-12">
                             <h2 class="mt-0 mb-1">Evaluation of Design</h2>
-                        <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
+                            <p>We had to calculate the necessary torques for lifting the system in order to choose a proper motor, pulley, and gear ratio.</p> 
+
+                            <h4>Torque Calculations</h4> 
+                            <p>Ass mentioned above, we selected a motor with a rated torque of 0.723 ft-lb. We collected data to further characterize the motor. Using a multimeter, we found the resistance, 
+                            and using a multimeter, we measured the no-load speed at varying voltages. We were planning on using a 9V power source, so we based calculation son that. 
+                            From this information, we were able to create the torque-speed curve below:
+                          </p>
+                        <div class="mb-3">
+                            <img src="img/Torque-Speed Curve at 9.35 V.png" class="img-fluid" alt="elevator  blog">
+                          </div>
+                          <p>We also approximated the torque generated by the full weight of the elevator including the linear bearings and the linear actuators on top. This torque is about _____.
+                          To counteract this torque, we added the counterweight and made it approximately equal in weight to the elevator system to reduce the load on the motor to just the 
+                          passengers. From there, we 
+                          </p>
+                          <h4>Gear Calculations</h4>
+                          <p>We added a 5:1 gear ratio to increase the factor of safety. Based on the counterweight and the weight of the elevator canceling each other out, we just designed the 
+                            gears to carry the specification weight of 3 lb.
+                          </p>
                         <div class="mb-3">
                             <img src="img/girl3.jpg" class="img-fluid" alt="elevator  blog">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ullam vel sequi omnis corporis labore deserunt dolor alias. Voluptates accusamus ipsum est doloribus at? Rem nemo distinctio odit esse ea?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos, autem maxime voluptatum dolore quos tempore, quasi placeat vel molestiae ut porro earum. At iusto placeat perferendis maiores reprehenderit nesciunt?</p>
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
-
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
-                        </p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h4>Beam Deflection of 10mm Shaft</h4>
+                        <p>Due to the weight of the gear and the pulley, the 10mm shaft that supports them both experiences a bending moment. </p>
+                        <div class="mb-3">
+                            <img src="img/girl3.jpg" class="img-fluid" alt="elevator  blog">
+                        </div>
+                        <p>The maximum deflection of the beam should be _____</p>
                     </div>
 
                     <div class="col-md-12">
@@ -193,6 +201,7 @@
                           they would open when prompted and then close after some allotted amount of time to close the dolls
                           in as they travel up and down. We could also add physical buttons for users to press instead of entering the desired floor into the computer.
                         </p>
+                        <p>We could also implement other typical elevator features such as a speed governor or screens on each floor that tell users which floor the elevator is coming from.</p>
                         <p>Additionally, since this project was only a proof of concept, we could begin to investigate how this system could be more cost effective. We could investigate how we could replace certain parts so it could 
                           begin to be implemented in real Barbie Dreamhouses. We could also edit the geometries for manufacturability.
                         </p>
@@ -203,20 +212,21 @@
 
                     <div class="col-md-12">
                             <h2 class="mt-0 mb-1">Conclusions</h2>
-                        <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
+                        <p>From our project, we can conclude that installing elevators in each Barbie Dreamhouse is completely possible. The completed system can successfully lift the desired amount of weight 
+                          and travel the specified distance. 
+                          </p> 
+                          <p>This would help accessibility
+                          become an engrained aspect of the dolls' lives as well as those of the children who play with them.</p>
+                          <p>It also supports the fact that Barbie can be anything, including an engineer. And a 
+                            <a href="https://www.dgs.ca.gov/DSA/Resources/CASp-Property-Inspection">CASp</a>.
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
                         <div class="mb-3">
-                            <img src="img/crying-barbie.jpg" class="img-fluid" alt="elevator  blog">
+                          <img src="img/crying-barbie.jpg" class="img-fluid" alt="elevator  blog">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ullam vel sequi omnis corporis labore deserunt dolor alias. Voluptates accusamus ipsum est doloribus at? Rem nemo distinctio odit esse ea?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos, autem maxime voluptatum dolore quos tempore, quasi placeat vel molestiae ut porro earum. At iusto placeat perferendis maiores reprehenderit nesciunt?</p>
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
-
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
+                        <p>Through this project, the team learned a lot. Elevators are complex systems, but the design is very flexible, at least in terms of choosing parts.
+                          While all the pieces have to work together, there are many possible configurations that can produce the same results, so then product selection can mostly come down
+                          to budget availability. 
                         </p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
             </div>
