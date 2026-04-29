@@ -68,7 +68,7 @@
 
                     <div class="col-md-12">
                             <h2 class="mt-0 mb-1">Introduction and Background</h2>
-                        <p> The goal of this project was to create a small-scale elevator that could transport Barbie Dolls about three feet up and down.
+                        <p>The goal of this project was to create a small-scale elevator that could transport Barbie Dolls about three feet up and down.
                           Typical Barbie Dreamhouses sold on the market are at least three floors which puts them in the category of buildings required by ADA guidelines 
                           to have an elevator.</p>
                           <p>Some Barbie dreamhouses do have elevators, but they are not autonomous. They require girls playing to manually move the elevator up and down
@@ -78,27 +78,52 @@
                           <div class="mb-3">
                             <img src="img/current-dreamhouse-elevator.jpg" class="img-fluid" alt="elevator blog">
                         </div>
-                          <p>Most elevators all over the world are controlled either by a hydraulic system or a pulley system.  For our project, 
+                          <p>Most elevators are controlled either by a hydraulic system or a pulley system.  For our project, 
                           considering the scale of what is being lifted up, we chose to create a pulley controlled elevator. This is done by implementing a 
                           motor that can be controlled and using a counterweight to stabilize the pulley system holding up the elevator cabin. 
                         </p>
-                        <div class="mb-3">
-                            <img src="img/parsons-elevator.jpeg" class="img-fluid" alt="elevator  blog">
+                        <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <img src="img/hyrdaulic-elevator.jpg"
+                                class="img-fluid w-100"
+                                alt="hydraulic elevator blog">
                         </div>
+
+                        <div class="col-md-6">
+                            <img src="img/pulley-elevator.jpg"
+                                class="img-fluid w-100"
+                                alt="pulley elevator blog">
+                        </div>
+                    </div>
                     </div>
 
                     <div class="col-md-12">
                             <h2 class="mt-0 mb-1">Requirements and Specifications</h2>
                         <p> In order to create our elevator, choices were made based on a realistic set of functionality, and other features that were considered a stretch goal. 
                           <ul>
-                            <li>The ability of the elevator to move up and down.</li>
-                            <li>The ability for the elevator to hold up a specific amount of weight</li>
-                            <li>The ability to move to different floors.</li>
+                            <li>The ability of the elevator to move up and down with a maximum displacement of 40 inches.</li>
+                            <li>The ability for the elevator to hold up at least 3lb of weight in addition to the weight of 
+                              the elevator itself</li>
+                            <li>The ability to move between different floors without human force.</li>
+                            <li>Look like a life-size elevator</li>
+                            <li>Be able to brake in an emergency</li>
                           </ul>
                         </p>
                         <p> Types of specifications: 
                           Motor specifications, gear specifications, pulley specifications based on the motor, determining tension of wire, counterweight specifications</p>
-                        <div class="mb-3">
+                        <p>The typical Barbie doll is 11-12" tall, so we decided to make the elevator 13" tall to accommodate for the tallest barbies and give them a little bit of 
+                          head room. We wanted a minimum of 3 floors since, as mentioned above, most Barbie dreamhouses have three floors. Additionally, the three floors are what mandated the 
+                          installation of an elevator as per ADA guidelines.
+                        </p>
+                        <p>We wanted the Barbies to be able to fit in the elevator with their friends, so we want a maximum carrying capcity of 3 lb. Most Barbie dolls are less than 0.5 lb, 
+                          so 6 dolls should be able to comfortably ride in the elevator together.</p>
+                          <p>We also mentioned above that we want the elevator to not only be accessible for dolls, but for the girls playing with them as well. Having an elevator that can move with
+                            the push of a button will remove te challenge for girls with physical disabilities that prevent them from being able to lift the elevator themselves. The other requirement is 
+                            that the elevator resembles real life elevators more, as current Barbie Dreamhouse elevators do not look very realistic. 
+                          </p>
+                          <p>One final stretch goal is that the system be able to brake in case of an emergency. Most elevators have emergency braking systems in case something fails and puts passengers
+                             in danger. We care about the safety of our passengers, so we want to put mechanisms in place that will ensure a safe ride.</p>
+                          <div class="mb-3">
                             <img src="img/girl3.jpg" class="img-fluid" alt="elevator blog">
                         </div>
                     </div>
@@ -163,20 +188,17 @@
 
                     <div class="col-md-12">
                             <h2 class="mt-0 mb-1">Future Work</h2>
-                        <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
-                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
+                        <p> In the future, we want to add some additional features to make our elevator more life-like. 
+                          We would add elevator doors. The doors could be on each floor or on the elevator itself, but
+                          they would open when prompted and then close after some allotted amount of time to close the dolls
+                          in as they travel up and down. We could also add physical buttons for users to press instead of entering the desired floor into the computer.
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
+                        <p>Additionally, since this project was only a proof of concept, we could begin to investigate how this system could be more cost effective. We could investigate how we could replace certain parts so it could 
+                          begin to be implemented in real Barbie Dreamhouses. We could also edit the geometries for manufacturability.
+                        </p>
                         <div class="mb-3">
                             <img src="img/girl3.jpg" class="img-fluid" alt="elevator  blog">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ullam vel sequi omnis corporis labore deserunt dolor alias. Voluptates accusamus ipsum est doloribus at? Rem nemo distinctio odit esse ea?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos, autem maxime voluptatum dolore quos tempore, quasi placeat vel molestiae ut porro earum. At iusto placeat perferendis maiores reprehenderit nesciunt?</p>
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis, nam dolor nostrum error, repellendus at reiciendis voluptatibus ducimus molestiae enim obcaecati natus nihil maiores corporis similique cumque impedit eaque.
-
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
-                        </p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
 
                     <div class="col-md-12">
@@ -186,7 +208,7 @@
                         </p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quod eveniet dignissimos nemo voluptas. Repellat enim maiores, quod, quos dignissimos optio at recusandae fugit aspernatur commodi id. Placeat, nobis id!</p>
                         <div class="mb-3">
-                            <img src="img/girl3.jpg" class="img-fluid" alt="elevator  blog">
+                            <img src="img/crying-barbie.jpg" class="img-fluid" alt="elevator  blog">
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ullam vel sequi omnis corporis labore deserunt dolor alias. Voluptates accusamus ipsum est doloribus at? Rem nemo distinctio odit esse ea?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos, autem maxime voluptatum dolore quos tempore, quasi placeat vel molestiae ut porro earum. At iusto placeat perferendis maiores reprehenderit nesciunt?</p>
